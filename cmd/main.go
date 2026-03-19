@@ -12,6 +12,7 @@ func main() {
 		"localhost:7777",
 		"localhost:7778",
 	})
+
 	if err := server.Start(":8888", lb); err != nil {
 		log.Fatal(err)
 	}
