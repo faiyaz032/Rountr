@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	lb := balancer.NewRoundRobin([]string{
+	lb := balancer.NewLoadBalancer(balancer.RoundRobinAlgo, []string{
 		"localhost:7777",
 		"localhost:7778",
 	})
